@@ -227,6 +227,42 @@ repositories:
     type: git
     url: https://github.com/ros-o/metapackages.git
     version: obese-devel
+  moveit/geometric_shapes:
+    type: git
+    url: https://github.com/ros-planning/geometric_shapes.git
+    version: noetic-devel
+  moveit/moveit:
+    type: git
+    url: https://github.com/ros-planning/moveit.git
+    version: master
+  moveit/moveit_msgs:
+    type: git
+    url: https://github.com/ros-planning/moveit_msgs.git
+    version: master
+  moveit/moveit_resources:
+    type: git
+    url: https://github.com/ros-planning/moveit_resources.git
+    version: master
+  moveit/moveit_tutorials:
+    type: git
+    url: https://github.com/ros-planning/moveit_tutorials.git
+    version: master
+  moveit/moveit_visual_tools:
+    type: git
+    url: https://github.com/ros-planning/moveit_visual_tools.git
+    version: master
+  moveit/panda_moveit_config:
+    type: git
+    url: https://github.com/ros-planning/panda_moveit_config.git
+    version: noetic-devel
+  moveit/rviz_visual_tools:
+    type: git
+    url: https://github.com/PickNikRobotics/rviz_visual_tools
+    version: master
+  moveit/srdfdom:
+    type: git
+    url: https://github.com/ros-planning/srdfdom
+    version: noetic-devel
   navigation:
     type: git
     url: https://github.com/ros-planning/navigation.git
