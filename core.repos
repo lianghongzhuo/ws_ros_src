@@ -255,14 +255,10 @@ repositories:
     type: git
     url: https://github.com/ros-planning/panda_moveit_config.git
     version: noetic-devel
-  moveit/rviz_visual_tools:
+  moveit/ruckig:
     type: git
-    url: https://github.com/PickNikRobotics/rviz_visual_tools
+    url: https://github.com/pantor/ruckig.git
     version: master
-  moveit/srdfdom:
-    type: git
-    url: https://github.com/ros-planning/srdfdom
-    version: noetic-devel
   navigation:
     type: git
     url: https://github.com/ros-planning/navigation.git
@@ -327,6 +323,10 @@ repositories:
     type: git
     url: https://github.com/pr2/pr2_mechanism_msgs.git
     version: master
+  pybind11_catkin:
+    type: git
+    url: https://github.com/ipab-slmc/pybind11_catkin.git
+    version: master
   python_qt_binding:
     type: git
     url: https://github.com/lianghongzhuo/python_qt_binding.git
@@ -339,6 +339,10 @@ repositories:
     type: git
     url: https://github.com/ros-visualization/qwt_dependency.git
     version: kinetic-devel
+  random_numbers:
+    type: git
+    url: https://github.com/ros-planning/random_numbers.git
+    version: master
   realtime_tools:
     type: git
     url: https://github.com/ros-controls/realtime_tools.git
