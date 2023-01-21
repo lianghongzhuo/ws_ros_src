@@ -3,10 +3,6 @@ repositories:
     type: git
     url: https://github.com/facontidavide/PlotJuggler
     version: main
-  Stage:
-    type: git
-    url: https://github.com/ros-o/Stage
-    version: obese-devel
   actionlib:
     type: git
     url: https://github.com/ros/actionlib.git
@@ -145,7 +141,7 @@ repositories:
     version: obese-devel
   geometry2:
     type: git
-    url: https://github.com/ros/geometry2
+    url: https://github.com/lianghongzhuo/geometry2
     version: noetic-devel
   geometry_tutorials:
     type: git
@@ -325,7 +321,7 @@ repositories:
     version: master
   pybind11_catkin:
     type: git
-    url: https://github.com/ipab-slmc/pybind11_catkin.git
+    url: https://github.com/lianghongzhuo/pybind11_catkin.git
     version: master
   python_qt_binding:
     type: git
@@ -346,7 +342,7 @@ repositories:
   realtime_tools:
     type: git
     url: https://github.com/ros-controls/realtime_tools.git
-    version: melodic-devel
+    version: noetic-devel
   resource_retriever:
     type: git
     url: https://github.com/ros-o/resource_retriever
@@ -579,10 +575,6 @@ repositories:
     type: git
     url: https://github.com/ros-planning/srdfdom.git
     version: noetic-devel
-  stage_ros:
-    type: git
-    url: https://github.com/ros-simulation/stage_ros.git
-    version: lunar-devel
   std_msgs:
     type: git
     url: https://github.com/ros/std_msgs.git
@@ -619,6 +611,10 @@ repositories:
     type: git
     url: https://github.com/ros-o/visualization_tutorials.git
     version: obese-devel
+  warehouse_ros:
+    type: git
+    url: https://github.com/ros-planning/warehouse_ros.git
+    version: kinetic-devel
   webkit_dependency:
     type: git
     url: https://github.com/ros-visualization/webkit_dependency.git
