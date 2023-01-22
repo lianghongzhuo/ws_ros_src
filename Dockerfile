@@ -26,6 +26,7 @@ RUN . "/opt/conda/etc/profile.d/conda.sh" && . "/opt/conda/etc/profile.d/mamba.s
 
 RUN . "/opt/conda/etc/profile.d/conda.sh" && . "/opt/conda/etc/profile.d/mamba.sh" && mamba activate ros11 \
 && cd /root/ws_ros/ && catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -Wno-deprecated -Wno-dev \
--DCATKIN_ENABLE_TESTING=OFF && export ROS_VERSION=1 && export ROS_DISTRO=one
+-DCATKIN_ENABLE_TESTING=OFF
 RUN . "/opt/conda/etc/profile.d/conda.sh" && . "/opt/conda/etc/profile.d/mamba.sh" && mamba activate ros11 \
+&& export ROS_VERSION=1 && export ROS_DISTRO=one \
 && cd /root/ws_ros/ && catkin build
