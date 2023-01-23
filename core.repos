@@ -229,7 +229,7 @@ repositories:
     version: noetic-devel
   moveit/moveit:
     type: git
-    url: https://github.com/ros-planning/moveit.git
+    url: https://github.com/lianghongzhuo/moveit.git
     version: master
   moveit/moveit_msgs:
     type: git
