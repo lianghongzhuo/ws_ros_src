@@ -17,6 +17,6 @@ catkin build --continue-on-failure
 `docker image build -t ros_docker .`
 
 ## create docker container
-`docker run -i -d --name ros11 -v $HOME/code/ws_ros_src/:/root/code/ws_ros_src --privileged --net=host ros_docker`
+`docker run -i -d --name ros11 --privileged --net=host ros_docker`
 
 `docker exec -it ros11 bash`

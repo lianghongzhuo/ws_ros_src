@@ -145,7 +145,7 @@ repositories:
     version: obese-devel
   geometry2:
     type: git
-    url: https://github.com/lianghongzhuo/geometry2
+    url: https://github.com/ros/geometry2
     version: noetic-devel
   geometry_tutorials:
     type: git
