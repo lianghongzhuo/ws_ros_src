@@ -3,8 +3,8 @@
 ```bash
 mamba create -n ros11 python=3.11
 mamba activate ros11
-mkdir upstream src && vcs import --input core.repos ./src
-cd upstream && git clone https://github.com/fkie-forks/catkin_tools.git -b py311-asyncio && cd catkin_tools && pip install -e . && cd ../..
+mkdir src && vcs import --input core.repos ./src
+pip install git+https://github.com/catkin/catkin_tools
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release -Wno-deprecated -Wno-dev -DCATKIN_ENABLE_TESTING=OFF
 export ROS_VERSION=1 && export ROS_DISTRO=one
 catkin build --continue-on-failure

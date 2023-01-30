@@ -51,8 +51,7 @@ octomap libspnav mesa-libgl-devel-cos7-x86_64 pyqt-builder libtheora sdl sdl_ima
 pcl yaml-cpp libuvc libjpeg-turbo fcl ompl numpy ipython gazebo wstool -y && mamba clean --all -y
 RUN . "${CONDA_DIR}/etc/profile.d/conda.sh" && . "${CONDA_DIR}/etc/profile.d/mamba.sh" && mamba activate ros11 \
 && pip install vcstool empy rospkg defusedxml netifaces cpython \
-&& cd $HOME/ && git clone https://github.com/fkie-forks/catkin_tools.git -b py311-asyncio && cd catkin_tools \
-&& pip install -e .
+&& pip install git+https://github.com/catkin/catkin_tools
 COPY core.repos /root/ws_ros/
 RUN . "${CONDA_DIR}/etc/profile.d/conda.sh" && . "${CONDA_DIR}/etc/profile.d/mamba.sh" && mamba activate ros11 \
 && cd /root/ws_ros/ && mkdir -p /root/ws_ros/src && cd /root/ws_ros/ && vcs import --input core.repos /root/ws_ros/src \
