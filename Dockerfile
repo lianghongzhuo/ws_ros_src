@@ -45,10 +45,10 @@ RUN apt-get update > /dev/null && \
 
 RUN mamba create -n ros11 python=3.11 -y
 RUN . "${CONDA_DIR}/etc/profile.d/conda.sh" && . "${CONDA_DIR}/etc/profile.d/mamba.sh" && mamba activate ros11 \
-&& mamba install cxx-compiler clang gcc urdfdom poco tinyxml2 make cmake boost eigenpy libopencv gtest \
+&& mamba install pcl cxx-compiler clang gcc urdfdom poco tinyxml2 make cmake boost eigenpy libopencv gtest \
 gmock mesalib orocos-kdl pkg-config bullet qt pyqt pyqt5-sip log4cxx gpgme assimp \
 octomap libspnav mesa-libgl-devel-cos7-x86_64 pyqt-builder libtheora sdl sdl_image \
-pcl yaml-cpp libuvc libjpeg-turbo fcl ompl numpy ipython gazebo wstool -y && mamba clean --all -y
+yaml-cpp libuvc libjpeg-turbo fcl ompl numpy ipython gazebo wstool -y && mamba clean --all -y
 RUN . "${CONDA_DIR}/etc/profile.d/conda.sh" && . "${CONDA_DIR}/etc/profile.d/mamba.sh" && mamba activate ros11 \
 && pip install vcstool empy rospkg defusedxml netifaces cpython \
 && pip install git+https://github.com/catkin/catkin_tools
